@@ -1,0 +1,89 @@
+/* About Me container styling */
+.aboutme-container {
+    position: relative; /* Necessary for overlay positioning */
+    display: flex;
+    flex-direction: column; /* Column layout */
+    align-items: center;
+    justify-content: center;
+    background-image: url('dark-leaves.jpeg'); /* Background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-attachment: fixed;
+    height: 100vh; /* Full viewport height */
+    padding: 50px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Dark overlay */
+  .aboutme-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    z-index: 1; /* Make sure the overlay is on top of the background */
+  }
+  
+  /* Ensure content is above the overlay */
+  .aboutme-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Heading styling */
+  .aboutme-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  /* Paragraph styling */
+  .aboutme-content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    max-width: 800px;
+  }
+  
+  /* Image styling */
+  .aboutme-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-top: 20px;
+  }
+  
+  /* Media query for tablets */
+  @media (max-width: 768px) {
+    .aboutme-content h1 {
+      font-size: 28px; /* Adjusted font size for tablets */
+    }
+  
+    .aboutme-content p {
+      font-size: 20px; /* Adjusted font size for tablets */
+    }
+  
+    .aboutme-image img {
+      width: 200px; /* Adjusted width for tablets */
+      height: 200px; /* Adjusted height for tablets */
+    }
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 480px) {
+    .aboutme-content h1 {
+      font-size: 24px; /* Adjusted font size for smaller screens */
+    }
+  
+    .aboutme-content p {
+      font-size: 18px; /* Adjusted font size for smaller screens */
+    }
+  
+    .aboutme-image img {
+      width: 150px; /* Adjusted width for smaller screens */
+      height: 150px; /* Adjusted height for smaller screens */
+    }
+  }
+  

@@ -5,7 +5,7 @@
     flex-direction: column; /* Column layout */
     align-items: center;
     justify-content: center;
-    background-image: url('dark-leaves.jpeg'); /* Background image */
+    background-image: url('../../../public/dark-leaves.jpeg'); /* Background image */
     background-size: cover; /* Cover the entire container */
     background-position: center; /* Center the image */
     background-attachment: fixed;

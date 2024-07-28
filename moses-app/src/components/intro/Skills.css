@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('dark-leaves.jpeg'); /* Same background image */
+    background-image: url('../../../public/dark-leaves.jpeg'); /* Same background image */
     background-size: cover; /* Cover the entire container */
     background-position: center top; /* Position from the top */
     background-attachment: fixed;

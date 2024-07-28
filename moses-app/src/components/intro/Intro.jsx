@@ -6,7 +6,7 @@ const Introduction = () => {
     <div className="introduction-container">
       <div className="intro-text">
         <h1>Hello, I'm a Freelance Software Engineer</h1>
-        <p>Turning ideas into code</p>
+        <p>YOUR VISION, MY CODE: LET'S BUILD</p>
       </div>
       <div className="intro-image">
         <img src="moses.jpg" alt="Your Name" />

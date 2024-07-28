@@ -1,5 +1,7 @@
 // src/components/Services.jsx
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import './services.css';
 
 const services = [
@@ -14,25 +16,25 @@ const services = [
 ];
 
 const Services = () => {
-  // Extend the services array to ensure continuous scrolling
-  const extendedServices = [...services, ...services];
-
   return (
-    <div className="services-container">
+    <div id='services' className="services-container">
       <div className="services-content">
-        <h1>Our Services</h1>
-        <p>Explore the range of services we offer to meet your business needs.</p>
-        <div className="services-list-wrapper">
-          <div className="services-list">
-            {extendedServices.map((service, index) => (
-              <div key={index} className="service-item">
-                <div className="service-overlay">
-                  <h2>{service.title}</h2>
-                  <p>{service.description}</p>
-                </div>
+        <h1>My Services</h1>
+        <p>Explore the range of services I offer to meet your business needs.</p>
+        <div className="services-grid">
+          {services.map((service, index) => (
+            <div key={index} className="service-item">
+              <div className="service-overlay">
+                <h2>{service.title}</h2>
+                <p>{service.description}</p>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
+        </div>
+        <div className="contact-whatsapp">
+          <a href="https://wa.me/254757573241" className="whatsapp-icon" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faWhatsapp} size="2x" />
+          </a>
         </div>
       </div>
     </div>

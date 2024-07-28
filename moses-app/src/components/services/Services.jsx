@@ -32,9 +32,15 @@ const Services = () => {
           ))}
         </div>
         <div className="contact-whatsapp">
-          <a href="https://wa.me/254757573241" className="whatsapp-icon" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faWhatsapp} size="2x" />
-          </a>
+        <a 
+          href="https://wa.me/254757573241?text=I would like to know more about your services." 
+          className="whatsapp-icon" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faWhatsapp} size="2x" />
+        </a>
+
         </div>
       </div>
     </div>

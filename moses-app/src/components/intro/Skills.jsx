@@ -2,11 +2,13 @@ import React from 'react';
 import './Skills.css';
 
 const skills = {
-  programmingLanguages: ['C', 'Python', 'JavaScript', 'SQL'],
-  frontendDevelopment: ['HTML', 'CSS', 'React'],
-  backendDevelopment: ['Python', 'SQL', 'MongoDB', 'nginx'],
-  devOpsTools: ['Docker Containerization', 'nginx', 'Linux-Bash Scripting'],
-  miscellaneous: ['SEO', 'Redis', 'Web Technologies', 'Web Scrapping', 'Software Testing']
+  programmingLanguages: ['C', 'Python', 'JavaScript'],
+  Storage: ['SQL', 'MongoDB', 'Redis'],
+  frontendDevelopment: ['HTML', 'CSS', 'React', 'Vanilla JS'],
+  backendDevelopment: ['Python Flask','Node.Js ', 'Express.js'],
+  devOpsTools: [ 'Git', 'GitHub', 'Docker', 'nginx', 'Linux Bash-Scripting'],
+  softwareTesting: ['selenium', 'Postman', 'Swagger'],
+  miscellaneous: ['SEO']
 };
 
 const Skills = () => {
